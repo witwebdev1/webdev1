@@ -1,0 +1,400 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     
+
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css" type="text/css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-light.min.css" rel="stylesheet" />
+
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+     <script>hljs.initHighlightingOnLoad();</script>
+
+     
+
+     <style>
+       
+
+body 
+{
+  font-family: "Open Sans", "Helvetica", "Helvetica Neue",  "Arial", sans-serif;
+}
+
+figcaption
+{
+  margin-bottom: 20px;
+}
+
+.vertical-align
+{
+  display: flex;
+  align-items: center;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+     </style>
+
+   </head>
+
+  <body>
+    
+
+<style>
+  
+
+code
+{
+  font-family: "Monaco";
+  font-size: 110%;
+}
+
+img
+{
+  padding:1px;
+  border:1px solid black;
+}
+
+h1
+{
+  font-style:italic;
+  font-size:130%;
+  border-bottom:thin solid black;
+}
+
+h2
+{
+  font-size:110%;
+  border-bottom: thin solid black;
+}
+
+h3
+{
+  font-size:100%;
+  border-bottom: thin solid black;
+}
+
+body
+{
+  overflow-y: scroll;
+}
+
+.pushable > .pusher
+{
+  padding-bottom: 1.5rem;
+}
+
+.ui.segment.pushable
+{
+  margin: 0;
+  padding: 1rem 0;
+  overflow: visible;
+}
+
+
+
+</style>
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
+    <a href="../index.html">
+       Topic 2
+    </a>
+  </header>
+  <div class="right tab-menu menu">
+    
+    <a class="item" data-tab="CSS Part One Lab">
+      CSS Part One Lab
+    </a>
+    
+    <a class="item" data-tab="01">
+      01
+    </a>
+    
+    <a class="item" data-tab="02">
+      02
+    </a>
+    
+    <div class="item">
+      
+    </div>
+  </div>
+</div>
+
+<div class="ui segment pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    
+      
+        <a class="item" href="../../topic-02-CSS-1/book-00-CSS-Introduction/index.html">
+          CSS Introduction
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-CSS-1/book-01-Adding-Style/index.html">
+          CSS Adding Style
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-CSS-1/book-02-Adding-Colour/index.html">
+          CSS Adding Colour
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-CSS-1/book-03-Controlling-the-Font/index.html">
+          Controlling the Font
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-CSS-1/book-04-Text-Properties/index.html">
+          Text Properties
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-CSS-1/book-05-Styling-Links/index.html">
+          Styling Links
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-CSS-1/book-06-Grouping-Styles/index.html">
+          Grouping Styles
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-CSS-1/book-07-CSS Exercise/index.html">
+          CSS Part One Exercises
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-02-CSS-1/book-b/index.html">
+          CSS Part One Lab
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-CSS-2/book-00-Id-and-Class-Selectors/index.html">
+          Id and Class Selectors
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-CSS-2/book-01-Descendant-Selectors/index.html">
+          Descendant Selectors
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-CSS-2/book-02-Styling-Lists/index.html">
+          Styling Lists
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-CSS-2/book-03-CSS-Exercise/index.html">
+          CSS Part Two Exercises
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-03-CSS-2/book-b/index.html">
+          CSS Part Two Lab
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-Tables/book-00-Table-Introduction/index.html">
+          Table Introduction
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-Tables/book-01-Styling-Tables/index.html">
+          Table Styling
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-Tables/book-02-Advanced-Tables/index.html">
+          Advanced Tables
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-Tables/book-03-Using-nth-of-type/index.html">
+          Using nth-of-type
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-Tables/book-04-Table-Exercise/index.html">
+          Table Exercise
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-04-Tables/book-b/index.html">
+          Table Lab
+        </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment" id="labchat">
+      <br>
+      
+      <div  class="ui tab segment lab" data-tab="CSS Part One Lab">
+        <h1>Practical Work</h1>
+<p>The purpose of this practical session is to get comfortable with using CSS style rules and linking them to HTML pages.</p>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="01">
+        <h1>Practical One</h1>
+<ol>
+<li>Open <a href="archives/Practical_One.zip">Practical One</a>.    </li>
+<li>Create a sub folder called css.</li>
+<li>Open your text editor and create a blank document. Save the file as <em>cvstyle.css</em> in the css sub folder.</li>
+<li>Add the following rules to the .css file (cvstyle.css in the css sub folder):<ol>
+<li>body: background colour: hex FFFFE0; font colour: teal; font family: Book Antiqua or serif.</li>
+<li>h1 and h2: font colour: navy.</li>
+<li>hr: border width:0px, font colour: navy, background colour: navy, height:6px.</li>
+<li>a: font weight: bold.</li>
+<li>a:link: font colour: hex 0000CD.</li>
+<li>a:visited: font colour: black.</li>
+<li>a:hover: text decoration: none.</li>
+<li>a:active: font colour: aqua, background colour: navy.</li>
+</ol>
+</li>
+<li>In the Practical One folder open each .htm  file: (<strong>cv.htm</strong>;  <strong>education.htm</strong>; and <strong>work.htm</strong>) and add a link tag to the <head> section that links the .css file.</li>
+</ol>
+
+      </div>
+     
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>Practical Two</h1>
+<ol>
+<li>Open <a href="archives/Practical_Two.zip">Practical Two</a>.</li>
+<li>In the Practical Two folder, create a sub folder called css.</li>
+<li>Open your text editor and create a blank document. Save the file as <em>gardens.css</em> in the css sub folder.</li>
+<li>In the Practical Two folder open <strong>index.htm</strong> and add a link tag in the <head> section that links the .css file.</li>
+<li>Add the following rules to the .css file and in this example use ems for relative measurements (not percentages).<ol>
+<li>body: background colour: hex EEEEEE; hex colour: 000080; font family  Verdana or sans-serif,  size: 15px; </li>
+<li>h1: background colour: hex BDB69C; colour: hex 565B60; increase the font size by 3 times the parent value; all uppercase.</li>
+<li>p: text alignment: justify and line height: 1 and half times the parent value.</li>
+<li>q: font family: Comic Sans or cursive; colour: DarkSlateBlue; increase the font size by 10% of the base not the parent.</li>
+<li>dt: font weight: bold and increase the font size by 10% of the parent.</li>
+<li>a: font weight: bold.</li>
+<li>a:link and a:visited: colour: navy and increase the font size by 10% of the parent.</li>
+<li>a:hover: text decoration: no underline; colour: olive.</li>
+<li>a:active: background colour: navy and colour: yellow. </li>
+</ol>
+</li>
+</ol>
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!--<div class="ui bottom fixed borderless right menu">
+  <div class="ui right tiny menu">
+    <div class="ui mini message segment">
+      .
+      <a href="http://creativecommons.org/licenses/by-nc/4.0/"
+         title="External link to http://creativecommons.org/licenses/by-nc/4.0/"
+         target="_blank">Creative Commons License
+      </a>
+    </div>
+  </div>
+</div>-->
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+</script>
+
+
+
+    <footer>
+
+    </footer>
+    <script>
+      $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
+  const $images = $('.lab img');
+  jQuery.each($images, function(i) {
+    if ($images[i].alt.length > 0) {
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
+      $($images[i]).wrap(divImg);
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
+      divLabel.append($images[i].alt);
+      $(divLabel).insertBefore($images[i]);
+    }
+  });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
+});
+
+    </script>
+  </body>
+
+ </html>
