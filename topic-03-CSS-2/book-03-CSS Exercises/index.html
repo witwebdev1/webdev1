@@ -115,21 +115,21 @@ body
   <header class="header item">
     <i id="toc" class="sitemap icon"></i>
     <a href="../index.html">
-       CSS Part One
+      CSS Part Two
     </a>
   </header>
   <div class="right tab-menu menu">
     
-    <a class="item" data-tab="Grouping Styles">
-      Grouping Styles
+    <a class="item" data-tab="CSS Part Two Lab">
+      CSS Part Two Lab
     </a>
     
     <a class="item" data-tab="01">
       01
     </a>
     
-    <a class="item" data-tab="Exercises">
-      Exercises
+    <a class="item" data-tab="02">
+      02
     </a>
     
     <div class="item">
@@ -248,55 +248,82 @@ body
     <div class="ui basic segment" id="labchat">
       <br>
       
-      <div  class="ui tab segment lab" data-tab="Grouping Styles">
-        <h1>Objectives</h1>
-<p>This lab will show you how to group styles together.</p>
-<p><a href="#/01">Grouping Styles</a></p>
+      <div  class="ui tab segment lab" data-tab="CSS Part Two Lab">
+        <h1>Objective</h1>
+<p>The purpose of this lab is to get practice using CSS selectors, classes and id selectors; descendant selectors; and styling links.</p>
+<ul>
+<li><p><a href="#01">CSS Recap Exercise One</a></p>
+</li>
+<li><p><a href="#02">CSS Recap Exercise Two</a></p>
+</li>
+</ul>
 
       </div>
      
       <div  class="ui tab segment lab" data-tab="01">
-        <h1>Grouping Styles</h1>
-<p>If you want to apply the same style to different elements on a web page, you don&#39;t have to repeat
-yourself. Here is an example.</p>
-<pre><code>h1, h2, h3 {
-   font-family: &quot;Trebuchet MS&quot;, Helvetica, Arial, sans-serif;
-   background-color: navy;
-   color: white;
-}</code></pre>
-<p>Translation: if the element is a level one heading, a level two heading, or a level three heading,
-set the text to white, the background colour to navy, and the font to Trebuchet MS, or Helvetica, or Arial, or
-sans-serif if nothing else is available.</p>
-<p>Now, not only do you have the convenience of being able to style many pages from one central location
-(your CSS file), but you have the added convenience of being able to style many elements in
-one go.</p>
+        <h1>CSS Recap Exercise One</h1>
+<ol>
+<li>For this Exercise you need to download <a href="archives/Lab03.zip">Lab03</a>.    </li>
+<li>Create a sub folder called css.</li>
+<li>Open your text editor and create a blank document. Save the file as <em>witstyle.css</em> in the css sub folder.</li>
+<li>Add the following rules to the .css file (witstyle.css in the css sub folder):<ol>
+<li>Add a body selector: background colour :  hexFFFFE0; font colour : hex 0066cc (can be shortened to hex 06c); font family : Verdana or Geneva or Arial or Helvetica or sans-serif.</li>
+<li>Add an h1 and h2 group selector: font family : Georgia or &quot;Times New Roman&quot; or Times or serif; font colour: hex 666666 (can be shortened to hex 666).</li>
+<li>Add an individual h1 selector: font size : 1.5em.</li>
+<li>Add an individual h2 selector: font size : 1.25em.</li>
+<li>Add an ul selector: list style type : none; width : 18%.</li>
+<li>Add an li selector: margin : 1em 0; background colour : hex B0C4DE; padding: .5em; border left : solid black 5px;  border right : solid black 5px. </li>
+<li>Add an a selector:  font weight : bold; text align : center.</li>
+<li>Add an a:link and a:visited group selector: font colour: navy; text decoration : none; </li>
+<li>Add an a:hover pseudo class selector: text decoration : underline.</li>
+<li>Add an a:active pseudo class selector: font colour : aqua.</li>
+<li>Add a descendant selector p a:link and p a:visited group selector: text decoration : underline.</li>
+<li>Add a descendant selector p a:hover:  text decoration : none.</li>
+<li>Add an img selector: float: right;  margin left:1%.</li>
+<li>Add a class p.news: font family:Cursive. </li>
+</ol>
+</li>
+<li>Modify the existing .html files as follows:<ol>
+<li>Add a link to the stylesheet in the head section of the 3 files: <strong>index.html</strong>; <strong>aboutwit.html</strong>; and <strong>director.html</strong>.</li>
+<li>Modify the second paragraph in the index.html page to incorporate the p.news class.</li>
+<li>Modify the third paragraph in aboutwit.html to incorporate the p.news class.</li>
+<li>Modify the fourth and fifth paragraphs in director.html to incorporate the p.news class.</li>
+</ol>
+</li>
+</ol>
 
       </div>
      
-      <div  class="ui tab segment lab" data-tab="Exercises">
-        <h1>Grouping Styles Exercises</h1>
-<h2>Exercise One</h2>
-<ul>
-<li>Open the recently completed lab03 folder.</li>
-<li>Modify the .css file as follows:<ul>
-<li>At present there are 2 separate style rules for h1 and h2, but both have the same property and value. Group the style rules together.</li>
-</ul>
+      <div  class="ui tab segment lab" data-tab="02">
+        <h1>CSS Recap Exercise Two</h1>
+<ol>
+<li>For this Exercise you need to download <a href="archives/Lab04.zip">Lab04</a>.</li>
+<li>In the Practical Two folder, create a sub folder called css.</li>
+<li>Open your text editor and create a blank document. Save the file as <em>style.css</em> in the css sub folder.</li>
+<li>In the Practical Two folder open <strong>index.html</strong> and add a link tag in the <head> section that links the .css file.</li>
+<li>Open <strong>about.html</strong> and <strong>contact.html</strong> and add a link tag in the <head> section that links the .css file.</li>
+<li>Add the following rules to the .css file:<ol>
+<li>body: background colour: hex e2edff; hex colour: 000080; font family:  Verdana Helvetica, Arial or sans-serif; line height: increase by 25%. </li>
+<li>group selector p and blockquote: small font size; colour:navy.</li>
+<li>li: small font size.</li>
+<li>h1: extra large font size.</li>
+<li>h2: medium font size; normal font weight.</li>
+<li>group selector h1, h2 and h3: font family: Trebuchet MS, Helvetica, Arial or sans-serif; background colour: navy; colour: white.</li>
+<li>a: bold font weight.</li>
+<li>a:link: colour: black; no text decoration.</li>
+<li>a:visited: colour: navy; no text decoration.</li>
+<li>a:hover: text decoration: underline; colour: white; background colour: navy.</li>
+<li>a:active: background colour: navy and colour: aqua. </li>
+<li>descendant selector <em>p a:link</em>: no text decoration.</li>
+<li>id <em>tagline</em>: italic font style; font family: Georgia, Times or serif.</li>
+<li>class <em>fun</em>: colour: hex 339999; font family: Georgia, Times or serif; leterr spacing: .05em.</li>
+</ol>
 </li>
-</ul>
-<h2>Exercise Two</h2>
-<ul>
-<li>Download, extract and open the <a href="archives/lab04.zip">lab04</a> folder.    </li>
-<li>Create a sub folder called css.</li>
-<li>Open your text editor and create a blank document. Save the file as <em>gardens.css</em> in the css sub folder.</li>
-<li>Add the following rules to the .css file (gardens.css in the css sub folder) and in this example use ems for relative measurements (not percentages):
- body: background colour: hex EEEEEE;  colour: hex 000080; font family  Verdana or sans-serif,  size: 15px; <ul>
-<li>h1: background colour: hex BDB69C; colour: hex 565B60; increase the font size by 3 times the parent value; all uppercase.</li>
-<li>p: text alignment: justify and line height: 1 and half times the parent value.</li>
-<li>q: font family: Comic Sans or cursive; colour: DarkSlateBlue; increase the font size by 10% of the base not the parent.</li>
-</ul>
-</li>
-<li>In the lab04 folder open <strong>index.html</strong> and add a link tag to the <head> section that links the .css file.</li>
-</ul>
+<li>In each of the .html files, apply the <em>tagline</em> id to the first paragraph (it is after the H1 heading).</li>
+<li>In <strong>about.html</strong>, apply the <em>fun</em> class to the blockquote.</li>
+<li>Also, in this file (about.html), apply the <em>fun</em> class to the first 2 words  (Bubble Under) of the paragraph after the H2 heading.</li>
+</ol>
+<p><img src="img/screen.png" alt=""> </p>
 
       </div>
      
