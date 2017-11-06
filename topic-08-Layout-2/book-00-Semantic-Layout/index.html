@@ -343,6 +343,24 @@ body
         </a>
       
     
+      
+        <a class="item" href="../../topic-09-Bootstrap-1/book-00-Bootstrap-Introduction/index.html">
+          Bootstrap Introduction
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-Bootstrap-1/book-01-Bootstrap-Grid-Introduction/index.html">
+          Bootstrap-Grid-Introduction
+        </a>
+      
+    
+      
+        <a class="item" href="../../topic-09-Bootstrap-1/book-02-Bootstrap-Grid-Details/index.html">
+          Bootstrap-Grid-Details
+        </a>
+      
+    
   </div>
   <div class="pusher" tabindex="-1">
     <div class="ui basic segment" id="labchat">
@@ -375,6 +393,8 @@ body
 </li>
 <li><p><code>&lt;section&gt;</code>: Identifies significant portions of the content on the page. This tag is somewhat analogous to dividing a book into chapters. Used to either group different articles into different purposes or subjects, or to define the different sections of a single article.</p>
 </li>
+<li><p><code>&lt;main&gt;</code>: The main content of the body of a document or application. The main content area consists of content that is directly related to or expands upon the central topic of a document or central functionality of an application. Can only appear once on each page, and cannot be a descendant of elements such as nav, header, or footer.</p>
+</li>
 <li><p><code>&lt;aside&gt;</code>: Defines a block of content that is related to the main content around it, but not central to the flow of it. It’s used to group content related to its surrounding content. For example, in a blog it can contain categories and a list of popular posts.</p>
 </li>
 </ul>
@@ -387,7 +407,7 @@ body
 <p>In the following example, we divide the page into three parts (header, main content, and footer). We style four elements: one for each of the page divisions and one to control the page.</p>
 <p>The page layout will be as follows:</p>
 <ul>
-<li>A mainContainer div, which will control the entire page.</li>
+<li>A main element, which will control the entire page.</li>
 <li>A header element, which will contain a h1 heading.</li>
 <li>A section element, which includes:</li>
 <li>An article element, which will contain the content information.</li>
@@ -395,7 +415,7 @@ body
 </ul>
 <pre><code class="lang-html">&lt;body&gt;
 
-&lt;div id=&quot;mainContainer&quot;&gt;
+&lt;main&gt;
 &lt;header&gt;
   &lt;h1&gt;this is the header&lt;/h1&gt;
 &lt;/header&gt;
@@ -407,14 +427,14 @@ body
   &lt;/article&gt;
 &lt;/section&gt;
 &lt;footer&gt;Footer&lt;/footer&gt;
-&lt;/div&gt;
+&lt;/main&gt;
 
 &lt;/body&gt;</code></pre>
 <pre><code class="lang-css">body {
   background-color:gray;
 }
 
-#mainContainer {
+main {
   margin:2%;
   background-color:white;
 }
@@ -451,9 +471,9 @@ footer {
 <p>In the following example, we divide the page into five (header, left side, main content, right side, and footer). We style seven elements: one for each of the page divisions and two to control the page.</p>
 <p>The page layout will be as follows:</p>
 <ul>
-<li>A mainContainer div, which will control the entire page.</li>
+<li>A container div, which will control the entire page.</li>
 <li>A header element, which will contain any header content.</li>
-<li>A main div, which will control the navigation and content areas.</li>
+<li>A main element, which will control the navigation and content areas.</li>
 <li>A nav element, which will contain any links.</li>
 <li>An aside element, which will contain extra information (to be placed on right hand side of the browser window).</li>
 <li>A section element, which includes:</li>
@@ -462,9 +482,9 @@ footer {
 </ul>
 <pre><code class="lang-html">&lt;body&gt;
 
-&lt;div id=&quot;mainContainer&quot;&gt;
+&lt;div id=&quot;container&quot;&gt;
   &lt;header&gt;this is the header&lt;/header&gt;
-  &lt;div id =&quot;main&quot;&gt;
+  &lt;main&gt;
     &lt;nav&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&quot;http://www.wit.ie&quot;&gt;Waterford IT&lt;/a&gt;&lt;/li&gt;
@@ -479,10 +499,10 @@ footer {
          &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pulvinar eros eu diam. Quisque ut orci ut nunc lobortis aliquam. Praesent metus. Pellentesque luctus. Suspendisse nisl.&lt;/p&gt;
          &lt;p&gt;Morbi convallis lectus a elit. Morbi augue. Aenean quis ipsum non dui interdum egestas. Suspendisse quis turpis. Suspendisse et sem in neque dictum hendrerit. Nulla pede.&lt;/p&gt;
       &lt;/article&gt;
-    &lt;/section&gt; &lt;!-- content --&gt;
-  &lt;/div&gt; &lt;!-- main --&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
   &lt;footer&gt;footer&lt;/footer&gt;
-&lt;/div&gt;
+&lt;/div&gt; &lt;!-- container --&gt;
 
 &lt;/body&gt;</code></pre>
 <p>View this example here: <a href="archives/examples/test2.htm" target="_ blank">Example Two</a></p>
@@ -494,7 +514,7 @@ footer {
   height:100%;
 }
 
-#mainContainer {
+#container {
   margin: 2em;
 }
 
@@ -505,7 +525,7 @@ header {
   margin-bottom:5%;
 }
 
-#main {
+main {
   overflow:hidden;
 }
 
@@ -553,20 +573,20 @@ nav ul {
         <h1>Example Three</h1>
 <p>In the following example, we divide the page into three (header, main content, and right side). The page will contain:</p>
 <ul>
-<li>A mainContainer div, which will control the entire page.</li>
+<li>A container div, which will control the entire page.</li>
 <li>A header element, which will contain any header content.</li>
-<li>A main div, which will subdivide the page further:</li>
+<li>A main element, which will subdivide the page further:</li>
 <li>A section element, which includes:</li>
 <li>An article element, which will contain the content information.</li>
 <li>A nav element, which will contain any links (to be placed on right hand side of the browser window).</li>
 </ul>
 <pre><code class="lang-html">&lt;body&gt;
 
-&lt;div id=&quot;mainContainer&quot;&gt;
+&lt;div id=&quot;container&quot;&gt;
   &lt;header&gt;
     This is the header
   &lt;/header&gt; &lt;!-- header --&gt;
-  &lt;div id = &quot;main&quot;&gt;
+  &lt;main&gt;
     &lt;nav&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&quot;http://www.wit.ie&quot;&gt;Waterford IT&lt;/a&gt;&lt;/li&gt;
@@ -578,9 +598,9 @@ nav ul {
          &lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer pulvinar eros eu diam. Quisque ut orci ut nunc lobortis aliquam. Praesent metus. Pellentesque luctus. Suspendisse nisl.&lt;/p&gt;
          &lt;p&gt;Morbi convallis lectus a elit. Morbi augue. Aenean quis ipsum non dui interdum egestas. Suspendisse quis turpis. Suspendisse et sem in neque dictum hendrerit. Nulla pede.&lt;/p&gt;
       &lt;/article&gt;
-    &lt;/section&gt; &lt;!-- content --&gt;
-  &lt;/div&gt; &lt;!-- main --&gt;
-&lt;/div&gt; &lt;!-- mainContainer --&gt;
+    &lt;/section&gt;
+  &lt;/main&gt; &lt;!-- main --&gt;
+&lt;/div&gt; &lt;!-- container --&gt;
 
 &lt;/body&gt;</code></pre>
 <p>View the example here: <a href="archives/examples/test3.htm" target="_ blank">Example Three</a></p>
@@ -592,7 +612,7 @@ nav ul {
   height:100%;
 }
 
-#mainContainer {
+#container {
   margin: 2em;
 }
 
@@ -603,7 +623,7 @@ header {
   margin-bottom: 5%;
 }
 
-#main {
+main {
   position: relative;
   width: 100%;
 }
@@ -652,10 +672,10 @@ section h2 {
 <ul>
 <li>After the opening <code>&lt;body&gt;</code> tag add a div called container (i.e. <code>&lt;div id = &quot;container&quot;&gt;</code>).</li>
 <li>Within the container div, add a header element. The opening header tag should be before the opening <code>&lt;h1&gt;</code> tag and the closing header tag should be after the closing <code>&lt;/h1&gt;</code> tag.</li>
-<li>Next, add a div (called main) to contain the navigation and section structural elements.</li>
+<li>Next, add a <code>&lt;main&gt;</code> element to contain the navigation and section structural elements.</li>
 <li>Add <code>&lt;nav&gt;</code> tags around the <code>&lt;ul&gt;</code> (the unordered list contains a list of links which are the navigation for the site.)</li>
 <li>After the closing <code>&lt;/nav&gt;</code> tag, put a <code>&lt;section&gt;</code> tag. The section element should surround the rest of the content on the page (the h2 heading and two paragraphs).</li>
-<li>At the end of the page (before the closing <code>&lt;body&gt;</code> tag) including the closing tags for the section element, the main div and the container div (i.e.<code>&lt;/section&gt;&lt;/div&gt;&lt;/div&gt;</code>)</li>
+<li>At the end of the page (before the closing <code>&lt;body&gt;</code> tag) including the closing tags for the section element, the main element and the container div (i.e.<code>&lt;/section&gt;&lt;/main&gt;&lt;/div&gt;</code>)</li>
 <li>You will need to add these structural tags to all three of the HTML pages in the site: index.htm, director.htm and aboutwit.htm.</li>
 <li>The finished HTML code should look like this:</li>
 </ul>
@@ -676,7 +696,7 @@ section h2 {
 <li>Add padding of 2em to the header.</li>
 <li>Change the font colour property of the h1, a:link, and a:visited selectors to white.</li>
 <li>The navigation structural element should be 13em wide and floated to the left.</li>
-<li>The main div should have the overflow property set to auto. It should also have a top margin of 0.5em.</li>
+<li>The main element should have the overflow property set to auto. It should also have a top margin of 0.5em.</li>
 <li>The section structural element should be moved in from the left by 14em using the margin-left property.</li>
 </ul>
 </li>
@@ -700,7 +720,7 @@ section h2 {
 <li>A div called &#39;outer&#39; that surrounds all of the content in the body section.</li>
 <li>A header element (around the H1 element)</li>
 <li>A nav element (surrounding the list of links)</li>
-<li>A section element (enclosing the remaining content on each page)</li>
+<li>A main element (enclosing the remaining content on each page)</li>
 </ul>
 </li>
 </ul>
@@ -709,7 +729,7 @@ section h2 {
 <li>Add line height of 1.5em to the body selector.</li>
 <li>The margin for the outer division is 2em.</li>
 <li>The navigation is 15em wide and has a background colour of #9FB6CD.</li>
-<li>The header and section structural elements have a left margin of 16em.</li>
+<li>The header and margin structural elements have a left margin of 16em.</li>
 <li>The header has a background colour of #9FB6CD, and has padding of 2em.</li>
 <li>The h1 heading has a font size of 2.5em.</li>
 <li>The paragraphs have justified alignment.</li>
